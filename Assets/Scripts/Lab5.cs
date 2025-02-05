@@ -29,5 +29,16 @@ public class Lab5 : MonoBehaviour
         {
             Debug.Log("Counting to: " + i);
         }
+
+        // Random number between 0 and 9
+        int random = Random.Range(0, 10);
+
+        // Re-roll our number until we randomly choose 5!
+        while (random != 5)
+        {
+            Debug.Log("Random number: " + random);
+            random = Random.Range(0, 10);
+        }
+        Debug.Log("Loop exited -- 5 has been randomized... CONGRADULATIONS, YOU DID IT!!!");
     }
 }
